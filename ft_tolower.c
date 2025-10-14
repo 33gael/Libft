@@ -6,9 +6,11 @@
 /*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 16:20:42 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/14 10:54:05 by gaeducas         ###   ########.fr       */
+/*   Updated: 2025/10/14 13:42:35 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_tolower(int c)
 {

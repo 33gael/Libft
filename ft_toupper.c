@@ -6,9 +6,11 @@
 /*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 10:53:22 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/14 10:55:25 by gaeducas         ###   ########.fr       */
+/*   Updated: 2025/10/14 13:46:12 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_toupper(int c)
 {

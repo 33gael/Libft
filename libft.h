@@ -1,20 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/13 16:16:39 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/14 13:45:31 by gaeducas         ###   ########.fr       */
+/*   Created: 2025/10/14 11:54:41 by gaeducas          #+#    #+#             */
+/*   Updated: 2025/10/14 13:46:31 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef LIBFT_H
+# define LIBFT_H
 
-int	ft_isascii(int c)
-{
-	if ((c >= 0 && c <= 127))
-		return (1);
-	return (0);
-}
+# include <stdlib.h>
+
+int	ft_isalnum(int c);
+int ft_atoi(const char *nptr);
+int	ft_isalpha(int c);
+int	ft_isascii(int c);
+int	ft_isdigit(int c);
+int	ft_isprint(int c);
+int	ft_tolower(int c);
+int	ft_toupper(int c);
+size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+
+#endif

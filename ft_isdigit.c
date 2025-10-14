@@ -6,9 +6,11 @@
 /*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 16:14:49 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/13 16:19:40 by gaeducas         ###   ########.fr       */
+/*   Updated: 2025/10/14 13:43:42 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {
