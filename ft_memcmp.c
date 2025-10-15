@@ -6,13 +6,13 @@
 /*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:46:18 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/14 17:41:40 by gaeducas         ###   ########.fr       */
+/*   Updated: 2025/10/15 11:10:17 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	memcmp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t			i;
 	unsigned char	*str1;
