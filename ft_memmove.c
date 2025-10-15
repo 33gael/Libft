@@ -6,7 +6,7 @@
 /*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 11:58:29 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/15 15:26:14 by gaeducas         ###   ########.fr       */
+/*   Updated: 2025/10/15 16:42:44 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,4 +40,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return ((void *)dest);
 }
-
