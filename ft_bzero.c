@@ -6,7 +6,7 @@
 /*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 16:35:32 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/15 16:38:07 by gaeducas         ###   ########.fr       */
+/*   Updated: 2025/10/16 16:56:27 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,4 @@ void	ft_bzero(void *s, size_t n)
 		str[i] = '\0';
 		i++;
 	}
-	return ((void *)s + i);
 }

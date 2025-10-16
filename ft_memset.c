@@ -6,7 +6,7 @@
 /*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 11:00:58 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/15 11:26:00 by gaeducas         ###   ########.fr       */
+/*   Updated: 2025/10/16 17:05:53 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ void	*ft_memset(void *s, int c, size_t n)
         str[i] = c;
         i++;
     }
-    return ((void *)s + i);
+    return (s);
 }

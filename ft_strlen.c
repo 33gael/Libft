@@ -6,13 +6,15 @@
 /*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 16:18:02 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/13 16:20:15 by gaeducas         ###   ########.fr       */
+/*   Updated: 2025/10/16 15:07:15 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include "libft.h"
+
+size_t	ft_strlen(const char *str)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (str[i])

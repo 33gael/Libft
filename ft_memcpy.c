@@ -6,7 +6,7 @@
 /*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:54:16 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/15 11:10:24 by gaeducas         ###   ########.fr       */
+/*   Updated: 2025/10/16 17:32:31 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,11 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	i = 0;
 	dst = (unsigned char *)dest;
 	source = (unsigned char *)src;
-	while (i < n && source[i])
+	if (!src && !dest)
+		return (NULL);
+	while (i != n)
 	{
-		dst[i] == source[i];
+		dst[i] = source[i];
 		i++;
 	}
 	return (dest);
