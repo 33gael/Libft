@@ -6,7 +6,7 @@
 /*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 11:58:29 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/15 16:42:44 by gaeducas         ###   ########.fr       */
+/*   Updated: 2025/10/17 12:33:28 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,29 +14,21 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t			i;
 	unsigned char	*destination;
 	unsigned char	*source;
 
-	i = 0;
+	if (!dest && !src)
+		return (NULL);
 	source = (unsigned char *)src;
 	destination = (unsigned char *)dest;
-	if (source > destination)
+	if (destination < source)
 	{
-		while (i < n)
-		{
-			destination[i] = source[i];
-			i++;
-		}
+		ft_memcpy(destination, source, n);
 	}
 	else
 	{
-		while (n > 0)
-		{
-			destination[i] = source[i];
-			i--;
-			n--;
-		}
+		while (n-- > 0)
+			destination[n] = source[n];
 	}
-	return ((void *)dest);
+	return (dest);
 }

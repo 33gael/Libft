@@ -6,7 +6,7 @@
 /*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 14:20:55 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/16 15:44:19 by gaeducas         ###   ########.fr       */
+/*   Updated: 2025/10/17 13:31:32 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ size_t  ft_strlcat(char *dst, const char *src, size_t size)
 
     i = 0;
     j = 0;
+    if (size == 0 && !dst)
+        return (ft_strlen(src));
     while (dst[j])
         j++;
     if (j >= size)

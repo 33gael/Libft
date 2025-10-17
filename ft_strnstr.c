@@ -6,7 +6,7 @@
 /*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 13:22:10 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/16 14:06:53 by gaeducas         ###   ########.fr       */
+/*   Updated: 2025/10/17 13:22:02 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,16 +18,16 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	j;
 
 	i = 0;
-	if (!little)
-		return ((char *)big);
+	if (little[0] == '\0')
+		return ((char *)(big + i));
 	while (big[i] && i < len)
 	{
 		j = 0;
-		while (big[i + j] && big[i + j] == little[j] && i + j < len)
+		while (little[j] && big[i + j] == little[j] && (i + j) < len)
 			j++;
 		if (little[j] == '\0')
-			return ((char *)big + i);
+			return ((char *)(big + i));
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
