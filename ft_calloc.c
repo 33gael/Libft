@@ -3,32 +3,31 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gaeducas <gaeducas@student.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 14:54:30 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/17 15:11:39 by gaeducas         ###   ########.fr       */
+/*   Updated: 2025/10/18 14:05:10 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*calloc(size_t nmemb, size_t size)
+void	*ft_calloc(size_t nbrs_elements, size_t size)
 {
-	int i;
-	char *dest;
+	char	*dest;
 
-	i = 0;
-	while (src[i])
-		i++;
-	dest = malloc(sizeof(char) * (i + 1));
+	dest = malloc(nbrs_elements * size);
 	if (!dest)
 		return (NULL);
-	i = 0;
-	while (src[i])
+	if (nbrs_elements == 0 || size == 0)
 	{
-		dest[i] = src[i];
-		i++;
+		dest = malloc(0);
+		if (!dest)
+			return (NULL);
+		return (dest);
 	}
-	dest[i] = '\0';
+	if (nbrs_elements > (size_t)-1 / size)
+		return (NULL);
+	ft_bzero(dest, nbrs_elements);
 	return (dest);
 }
