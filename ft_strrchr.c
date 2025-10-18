@@ -6,7 +6,7 @@
 /*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 11:57:35 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/17 13:14:32 by gaeducas         ###   ########.fr       */
+/*   Updated: 2025/10/18 21:19:04 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char    *ft_strrchr(const char *str, int searchchar)
         i++;
     while (i >= 0)
     {
-        if (str[i] == searchchar)
+        if (str[i] == (unsigned char)searchchar)
             return ((char *)str + i);
         i--;
     }

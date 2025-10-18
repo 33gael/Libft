@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaeducas <gaeducas@student.fr>             +#+  +:+       +#+        */
+/*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 14:43:08 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/18 14:49:23 by gaeducas         ###   ########.fr       */
+/*   Updated: 2025/10/18 20:58:56 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putnbr_fd(int nb, int fd)
 	if (nb == -2147483648)
 	{
 		write(fd, "-2147483648", 11);
-		return (0);
+		return ;
 	}
 	if (nb < 0)
 	{
