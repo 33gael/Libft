@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaeducas <gaeducas@student.fr>             +#+  +:+       +#+        */
+/*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 11:54:41 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/19 15:04:01 by gaeducas         ###   ########.fr       */
+/*   Updated: 2025/10/19 16:57:05 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_strrchr(const char *s, int c);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 char	*ft_strdup(const char *src);
-void	*calloc(size_t nmemb, size_t size);
+void	*ft_calloc(size_t nmemb, size_t size);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putendl_fd(char *s, int fd);
@@ -45,5 +45,6 @@ void	ft_putstr_fd(char *s, int fd);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char	*ft_strjoin(char const *s1, char const *s2);
 
 #endif

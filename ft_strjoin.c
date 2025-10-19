@@ -1,31 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/19 15:03:28 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/19 16:26:40 by gaeducas         ###   ########.fr       */
+/*   Created: 2025/10/19 16:28:20 by gaeducas          #+#    #+#             */
+/*   Updated: 2025/10/19 17:01:59 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+void	ft_strcat(char const *dest, char const *src)
 {
-	unsigned int	i;
-	char			*dest;
+	int		i;
+	int		j;
+	char	*dst;
 
 	i = 0;
-	dest = malloc(sizeof(char) * (ft_strlen(s) + 1));
-	if (!dest)
-		return (NULL);
-	while (s[i])
+	j = 0;
+	dst = (char *)dest;
+	while (dst[j])
+		j++;
+	while (src[i])
 	{
-		dest[i] = f(i, s[i]);
+		dst[j] = src[i];
 		i++;
+		j++;
 	}
-	dest[i] = '\0';
-	return (dest);
+	dst[j] = '\0';
+}
+
+char	*ft_strjoin(char const *s1, char const *s2)
+{
+	char *s3;
+	int i;
+
+	i = 0;
+	s3 = ft_calloc(((ft_strlen(s1)) + ft_strlen(s2) + 1),sizeof(char));
+	if (!s3)
+		return (NULL);
+    ft_strcat(s3,s1);
+	ft_strcat(s3,s2);
+	return (s3);
 }
