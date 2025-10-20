@@ -6,7 +6,7 @@
 /*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 14:43:08 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/18 20:58:56 by gaeducas         ###   ########.fr       */
+/*   Updated: 2025/10/20 22:06:30 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,7 @@ void	ft_putnbr_fd(int nb, int fd)
 		write(fd, "-", 1);
 	}
 	if (nb >= 0 && nb <= 9)
-	{
-		nb += '0';
-		write(fd, &nb, 1);
-	}
+		ft_putchar_fd(nb + '0', fd);
 	if (nb > 9)
 	{
 		ft_putnbr_fd(nb / 10, fd);

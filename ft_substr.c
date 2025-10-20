@@ -6,7 +6,7 @@
 /*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 19:12:45 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/18 23:59:55 by gaeducas         ###   ########.fr       */
+/*   Updated: 2025/10/20 22:20:04 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
         sub[0] = '\0';
         return (sub);
     }
+	if (len > ft_strlen(s) - start)
+		len = ft_strlen(s) - start;
 	if (s[i] == '\0')
 		return (NULL);
 	sub = malloc(sizeof(char) * len + 1);
