@@ -6,7 +6,7 @@
 /*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 11:01:10 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/20 21:43:43 by gaeducas         ###   ########.fr       */
+/*   Updated: 2025/10/23 15:15:08 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,14 +44,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	dest = ft_substr(s1, i, (j - i));
 	return (dest);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char *str;
-	//						i				j
-	str = ft_strdup("        Pipi       Caca      ");
-	printf("%s\n", ft_strtrim(str, " ij\0"));
-}
-	*/
