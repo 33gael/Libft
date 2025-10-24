@@ -6,13 +6,13 @@
 /*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 16:28:20 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/23 14:56:23 by gaeducas         ###   ########.fr       */
+/*   Updated: 2025/10/24 16:18:57 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_strcat(char const *dest, char const *src)
+static void	ft_strcat(char const *dest, char const *src)
 {
 	int		i;
 	int		j;

@@ -6,13 +6,13 @@
 /*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 13:05:57 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/23 14:58:43 by gaeducas         ###   ########.fr       */
+/*   Updated: 2025/10/24 16:19:18 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	lenght(long int n)
+static int	lenght(long int n)
 {
 	int	len;
 
