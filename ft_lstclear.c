@@ -1,22 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/24 16:18:24 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/27 16:35:35 by gaeducas         ###   ########.fr       */
+/*   Created: 2025/10/27 17:41:45 by gaeducas          #+#    #+#             */
+/*   Updated: 2025/10/27 17:49:08 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstlast(t_list *lst)
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	if (lst == NULL)
-		return (NULL);
-	while (lst->next != NULL)
-		lst = lst->next;
-	return (lst);
+	t_list	*list;
+
+	if (!lst || !del)
+		return ;
+	list = *lst;
+	while (list->next != NULL)
+	{
+		del(list->content);
+		list = list->next;
+		free(list);
+	}
+	list = NULL;
 }
