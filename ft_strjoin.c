@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gaeducas <gaeducas@student.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 16:28:20 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/24 16:18:57 by gaeducas         ###   ########.fr       */
+/*   Updated: 2025/10/30 11:48:05 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,7 @@ static void	ft_strcat(char const *dest, char const *src)
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*s3;
-	int		i;
 
-	i = 0;
 	s3 = ft_calloc(((ft_strlen(s1)) + ft_strlen(s2) + 1), sizeof(char));
 	if (!s3)
 		return (NULL);
