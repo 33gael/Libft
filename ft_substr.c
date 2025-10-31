@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gaeducas <gaeducas@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gaeducas <gaeducas@student.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 19:12:45 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/23 15:11:36 by gaeducas         ###   ########.fr       */
+/*   Updated: 2025/10/31 18:08:19 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	i;
 	char	*sub;
 
+	if (s == NULL)
+		return (NULL);
 	i = 0;
 	if (start >= ft_strlen(s))
 	{

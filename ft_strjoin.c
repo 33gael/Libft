@@ -6,7 +6,7 @@
 /*   By: gaeducas <gaeducas@student.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 16:28:20 by gaeducas          #+#    #+#             */
-/*   Updated: 2025/10/30 11:52:19 by gaeducas         ###   ########.fr       */
+/*   Updated: 2025/10/31 17:58:14 by gaeducas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*s3;
 
+	if (s1 == NULL || s2 == NULL)
+		return (NULL);
 	s3 = ft_calloc(((ft_strlen(s1)) + ft_strlen(s2) + 1), sizeof(char));
 	if (!s3)
 		return (NULL);
